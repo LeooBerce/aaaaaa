@@ -3,7 +3,7 @@ const historia = [
     {
         id: 0,
         texto: "Dois amigos decidiram ir caçar juntos. Antes de entrar na mata, eles precisam escolher as armas. Qual arsenal eles vão levar?",
-        imagem: "https://images.unsplash.com/photo-1516426122078-c23e76319801?w=800&q=80",
+        imagem: "https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=800&q=80",
         alternativas: [
             {
                 texto: "Armas excelentes: rifles modernos, munição de sobra e facas afiadas",
@@ -18,7 +18,7 @@ const historia = [
     {
         id: 1,
         texto: "Eles entram na floresta densa. O silêncio é quebrado por uivos longos e assustadores. Lobos. Muitos lobos. Os uivos ecoam por todos os lados. O que eles fazem?",
-        imagem: "https://images.unsplash.com/photo-1448375240586-882707db888b?w=800&q=80",
+        imagem: "https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=800&q=80",
         alternativas: [
             {
                 texto: "Recuar e tentar voltar pelo caminho que vieram",
@@ -33,7 +33,7 @@ const historia = [
     {
         id: 2,
         texto: "Os uivos estão cada vez mais próximos. As folhas se mexem. Olhos brilham na escuridão. Os dois amigos ficam paralisados. O medo toma conta. O que acontece agora?",
-        imagem: "https://images.unsplash.com/photo-1474511320723-9a5687357845?w=800&q=80",
+        imagem: "https://images.unsplash.com/photo-1474511320723-9a5687357845?auto=format&fit=crop&w=800&q=80",
         alternativas: [
             {
                 texto: "Um dos amigos foge correndo e o outro fica para lutar",
@@ -52,13 +52,13 @@ const finais = {
     finalBom: {
         titulo: "🏆 Final Feliz",
         texto: "Os dois amigos se posicionam de costas um para o outro. Com coragem e trabalho em equipe, eles enfrentam a alcateia. Disparos ecoam pela floresta. Depois de uma luta intensa, os lobos recuam e fogem. Os dois sobrevivem, feridos, mas vivos. Eles saem da mata como verdadeiros irmãos de caça.",
-        imagem: "https://images.unsplash.com/photo-1502082553048-f009c37129b9?w=800&q=80",
+        imagem: "https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=800&q=80",
         classe: "final-bom"
     },
     finalRuim: {
         titulo: "💀 Final Trágico",
         texto: "Um dos amigos entra em pânico e corre desesperado. O outro tenta segurar a posição sozinho, mas é cercado. Os lobos são rápidos demais. O que fugiu é alcançado logo adiante. O que ficou também não resiste. Os dois amigos caem na floresta. Ninguém volta para contar a história.",
-        imagem: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=800&q=80",
+        imagem: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=800&q=80",
         classe: "final-ruim"
     }
 };
@@ -101,7 +101,7 @@ function mostraPergunta(indice) {
     });
 }
 
-// Função que mostra o final
+// Função que mostra o final (CORRIGIDA)
 function mostraFinal(tipoFinal) {
     const final = finais[tipoFinal];
 
@@ -111,7 +111,8 @@ function mostraFinal(tipoFinal) {
 
     // Mostra o final
     caixaFinal.classList.remove("escondido");
-    caixaFinal.className = final.classe;
+    caixaFinal.classList.remove("final-bom", "final-ruim"); // limpa classes anteriores
+    caixaFinal.classList.add(final.classe);
 
     tituloFinal.textContent = final.titulo;
     textoFinal.textContent = final.texto;
