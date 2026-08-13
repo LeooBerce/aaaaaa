@@ -2,7 +2,7 @@ const historia = [
     {
         id: 0,
         texto: "Dois amigos decidiram ir caçar juntos. Antes de entrar na mata, eles precisam escolher as armas. Qual arsenal eles vão levar?",
-        imagem: "https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=900&q=80",
+        imagem: "https://cdn.observatoriodocinema.com.br/2019/11/supernatural_final_season-1068x580.jpg",
         alternativas: [
             {
                 texto: "Armas excelentes — rifles modernos, munição de sobra e facas afiadas",
@@ -17,7 +17,7 @@ const historia = [
     {
         id: 1,
         texto: "Eles entram na floresta densa. O silêncio é quebrado por uivos longos e assustadores. Lobos. Muitos lobos. Os uivos ecoam por todos os lados. O que eles fazem?",
-        imagem: "https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=900&q=80",
+        imagem: "https://www.loucoporviagens.com.br/wp-content/uploads/2015/02/floresta-negra-1.jpg",
         alternativas: [
             {
                 texto: "Recuar e tentar voltar pelo caminho que vieram",
@@ -32,7 +32,7 @@ const historia = [
     {
         id: 2,
         texto: "Os uivos estão cada vez mais próximos. As folhas se mexem. Olhos brilham na escuridão. Os dois amigos ficam paralisados. O medo toma conta. O que acontece agora?",
-        imagem: "https://images.unsplash.com/photo-1474511320723-9a5687357845?auto=format&fit=crop&w=900&q=80",
+        imagem: "https://assets.grok.com/users/36ddca02-473d-4fb4-8993-0ca5b57f664c/generated/baa85a0e-bb92-4838-ae85-0fa00c647936/image.jpg",
         alternativas: [
             {
                 texto: "Um dos amigos foge correndo e o outro fica para lutar",
@@ -50,13 +50,13 @@ const finais = {
     finalBom: {
         titulo: "SOBREVIVÊNCIA",
         texto: "Os dois amigos se posicionam de costas um para o outro. Com coragem e trabalho em equipe, eles enfrentam a alcateia. Disparos ecoam pela floresta. Depois de uma luta intensa, os lobos recuam e fogem. Os dois sobrevivem, feridos, mas vivos. Eles saem da mata como verdadeiros irmãos de caça.",
-        imagem: "https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=900&q=80",
+        imagem: "https://assets.grok.com/users/36ddca02-473d-4fb4-8993-0ca5b57f664c/generated/d72747c6-7cf0-4788-bb3f-77e9145965fe/image.jpg",
         classe: "final-bom"
     },
     finalRuim: {
         titulo: "MORTE",
         texto: "Um dos amigos entra em pânico e corre desesperado. O outro tenta segurar a posição sozinho, mas é cercado. Os lobos são rápidos demais. O que fugiu é alcançado logo adiante. O que ficou também não resiste. Os dois amigos caem na floresta. Ninguém volta para contar a história.",
-        imagem: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=900&q=80",
+        imagem: "https://assets.grok.com/users/36ddca02-473d-4fb4-8993-0ca5b57f664c/generated/1ab8f177-baf7-417e-aaa4-ed3571b74199/image.jpg",
         classe: "final-ruim"
     }
 };
