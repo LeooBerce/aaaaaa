@@ -5,28 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Missão: Caça na Floresta</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Special+Elite&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="overlay"></div>
+
     <div class="container">
-        <h1>🐺 Missão: Caça na Floresta</h1>
-        <p class="subtitulo">Dois amigos. Uma decisão. O destino nas suas mãos.</p>
+        <header>
+            <h1>CAÇA NA FLORESTA</h1>
+            <p class="subtitulo">Duas vidas. Uma escolha. Nenhum perdão.</p>
+        </header>
 
-        <div class="imagem-container">
-            <img id="imagem-cena" src="" alt="Cena da missão">
+        <div class="imagem-wrapper">
+            <img id="imagem-cena" src="" alt="Cena">
+            <div class="vinheta"></div>
         </div>
 
-        <div id="caixa-pergunta">
-            <!-- Texto da pergunta aparece aqui -->
-        </div>
+        <div id="caixa-pergunta" class="caixa-texto"></div>
 
-        <div id="caixa-alternativas">
-            <!-- Botões das alternativas aparecem aqui -->
-        </div>
+        <div id="caixa-alternativas"></div>
 
         <div id="caixa-final" class="escondido">
             <h2 id="titulo-final"></h2>
             <p id="texto-final"></p>
-            <button id="botao-reiniciar">Jogar novamente</button>
+            <button id="botao-reiniciar">RECOMEÇAR MISSÃO</button>
         </div>
     </div>
 
