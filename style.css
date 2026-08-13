@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #f0f0f0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background: rgba(0, 0, 0, 0.8);
+    border: 2px solid #4a7c59;
+    border-radius: 16px;
+    padding: 30px;
+    max-width: 720px;
+    width: 100%;
+    box-shadow: 0 0 40px rgba(74, 124, 89, 0.45);
+}
+
+h1 {
+    text-align: center;
+    color: #8bc34a;
+    margin-bottom: 8px;
+    font-size: 1.9rem;
+    text-shadow: 0 0 12px rgba(139, 195, 74, 0.5);
+}
+
+.subtitulo {
+    text-align: center;
+    color: #aaa;
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+}
+
+.imagem-container {
+    width: 100%;
+    height: 280px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 2px solid #4a7c59;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+#imagem-cena {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.4s ease;
+}
+
+#caixa-pergunta {
+    background: rgba(255, 255, 255, 0.06);
+    border-left: 5px solid #8bc34a;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 22px;
+    line-height: 1.65;
+    font-size: 1.12rem;
+}
+
+#caixa-alternativas {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.botao-alternativa {
+    background: #1a3c34;
+    color: #e8e8e8;
+    border: 2px solid #4a7c59;
+    padding: 16px 20px;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    text-align: left;
+}
+
+.botao-alternativa:hover {
+    background: #2e5a4c;
+    border-color: #8bc34a;
+    transform: translateX(8px);
+    box-shadow: 0 5px 18px rgba(139, 195, 74, 0.35);
+}
+
+#caixa-final {
+    display: none;
+    text-align: center;
+    padding: 10px 0;
+}
+
+#caixa-final h2 {
+    margin-bottom: 16px;
+    font-size: 1.7rem;
+}
+
+.final-bom h2 {
+    color: #8bc34a;
+}
+
+.final-ruim h2 {
+    color: #e74c3c;
+}
+
+#texto-final {
+    font-size: 1.15rem;
+    line-height: 1.7;
+    margin-bottom: 28px;
+}
+
+#botao-reiniciar {
+    background: #8bc34a;
+    color: #111;
+    border: none;
+    padding: 14px 30px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+#botao-reiniciar:hover {
+    background: #aed581;
+    transform: scale(1.05);
+}
+
+.escondido {
+    display: none !important;
+}
